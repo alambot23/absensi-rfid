@@ -1,66 +1,71 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<div align="center">
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+  <img src="https://cdn-icons-png.flaticon.com/512/8654/8654302.png" alt="NexusApp Logo" width="120" height="120" />
 
-## About Laravel
+  # 🚀 NexusApp — Sistem Absensi RFID & Akademik Terintegrasi
+  
+  **"Sistem Manajemen Presensi & Akademik Kampus Kelas Enterprise dengan Antarmuka UI/UX Premium Ala Startup SaaS Modern."**
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+  ---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+  [![Laravel Version](https://img.shields.io/badge/Laravel-v11.x-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)](https://laravel.com)
+  [![Vue Version](https://img.shields.io/badge/Vue.js-v3.x-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white)](https://vuejs.org)
+  [![InertiaJS](https://img.shields.io/badge/Inertia.js-v1.x-9553E8?style=for-the-badge&logo=inertia&logoColor=white)](https://inertiajs.com)
+  [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v3.x-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com)
+  [![PHP Version](https://img.shields.io/badge/PHP-v8.2-777BB4?style=for-the-badge&logo=php&logoColor=white)](https://php.net)
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+</div>
 
-## Learning Laravel
+## 📌 Tentang Proyek
+**NexusApp** adalah platform sistem informasi manajemen absensi perkuliahan berbasis **Kartu RFID (Radio Frequency Identification)** yang dirancang untuk mendigitalkan proses pencatatan kehadiran di ruang kelas secara *real-time*. Menggunakan arsitektur modern perpaduan **Laravel 11**, **Inertia.js**, dan **Vue 3 (Vite)**, aplikasi ini menawarkan performa super cepat berbasis *Single Page Application* (SPA) dengan desain visual dashboard yang sangat memukau.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+---
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## ✨ Fitur Unggulan (UI Gacor)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### 👑 Modul Administrator (Pusat Komando)
+* **Dashboard Statistik Dinamis:** Dilengkapi visualisasi grafik garis tren kehadiran mahasiswa berbasis **Chart.js** dengan gradasi warna premium.
+* **Manajemen Data Master Terpusat:** Sistem CRUD mutakhir untuk mengelola data Mahasiswa, Dosen, Ruangan, dan Mata Kuliah.
+* **Plotting KRS Fleksibel:** Kemudahan dalam memasukkan dan memetakan mahasiswa ke dalam kelas/jadwal tertentu secara massal.
 
-## Laravel Sponsors
+### 👨‍🏫 Modul Dosen Pengampu
+* **Akses Cepat Pengajaran:** Deteksi otomatis kelas yang sedang diampu langsung di halaman utama berdasarkan waktu saat ini.
+* **Validasi Kehadiran Manual:** Fitur *override* status absensi mahasiswa (Hadir, Terlambat, Sakit, Izin, Alpa) dengan aman untuk keperluan toleransi keterlambatan.
+* **Ekspor Laporan Cetak Resmi (PDF):** Menghasilkan dokumen rekap absensi berformat PDF resmi universitas lengkap dengan kop, ringkasan statistik persentase, dan kolom tanda tangan siap cetak.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### 🖥️ Modul Layar Kelas (Monitor Absensi Tanpa Login)
+* **Smart Background Listener:** Halaman khusus monitor ruangan (`/absen/{ruangan}`) yang secara otomatis aktif mencari jadwal perkuliahan yang sedang berjalan.
+* **Real-time RFID Processor:** Menerima data kiriman *tap* kartu mahasiswa dan langsung memproses status kehadiran (Tepat Waktu / Terlambat) berdasarkan parameter toleransi menit yang fleksibel.
 
-### Premium Partners
+---
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+## 🎨 Tampilan Pratinjau UI/UX
+> 💡 *Saran: Ambil screenshot aplikasi Anda, simpan di folder `public/screenshots/`, lalu tautkan gambarnya di sini untuk membuat halaman GitHub Anda jauh lebih interaktif.*
 
-## Contributing
+| Pusat Komando Admin | Portal Kerja Dosen |
+| :---: | :---: |
+| <img src="https://via.placeholder.com/400x230.png?text=Dashboard+Admin+NexusApp" width="100%" /> | <img src="https://via.placeholder.com/400x230.png?text=Dashboard+Dosen+NexusApp" width="100%" /> |
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+---
 
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## 📂 Struktur Folder Utama Proyek
+Aplikasi ini mengikuti standar arsitektur modern berkelas tinggi:
+```text
+absensi-rfid/
+├── app/
+│   ├── Http/
+│   │   ├── Controllers/       # Pusat Logika (Admin, Dosen, Absensi, Dashboard)
+│   │   └── Middleware/        # Satpam Proteksi Multi-Role (RoleMiddleware.php)
+│   └── Models/                # Struktur Blueprint Database & Relasi Eloquent
+├── bootstrap/
+│   └── app.php                # Registrasi Alias Middleware & Global Config (Laravel 11)
+├── config/                    # Pengaturan Sistem (Timezone: Asia/Jakarta)
+├── resources/
+│   ├── js/
+│   │   ├── Layouts/           # Layout Template Utama (AuthenticatedLayout.vue + SweetAlert2)
+│   │   └── Pages/             # Halaman Tampilan Vue (Dashboard, Admin, Dosen)
+│   └── views/
+│       ├── app.blade.php      # Entry Point HTML (Kustomisasi Favicon Online)
+│       └── reports/           # Template Dokumen Cetak (absensi.blade.php untuk DomPDF)
+└── routes/
+    └── web.php                # Jalur Rute Web dengan Proteksi Ganda Middleware Auth & Role
