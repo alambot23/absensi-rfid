@@ -39,15 +39,6 @@
 
 ---
 
-## 🎨 Tampilan Pratinjau UI/UX
-> 💡 *Saran: Ambil screenshot aplikasi Anda, simpan di folder `public/screenshots/`, lalu tautkan gambarnya di sini untuk membuat halaman GitHub Anda jauh lebih interaktif.*
-
-| Pusat Komando Admin | Portal Kerja Dosen |
-| :---: | :---: |
-| <img src="https://via.placeholder.com/400x230.png?text=Dashboard+Admin+NexusApp" width="100%" /> | <img src="https://via.placeholder.com/400x230.png?text=Dashboard+Dosen+NexusApp" width="100%" /> |
-
----
-
 ## 📂 Struktur Folder Utama Proyek
 Aplikasi ini mengikuti standar arsitektur modern berkelas tinggi:
 ```text
