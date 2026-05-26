@@ -19,13 +19,9 @@
 
 
   [![Laravel Version](https://img.shields.io/badge/Laravel-v11.x-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)](https://laravel.com)
-
   [![Vue Version](https://img.shields.io/badge/Vue.js-v3.x-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white)](https://vuejs.org)
-
   [![InertiaJS](https://img.shields.io/badge/Inertia.js-v1.x-9553E8?style=for-the-badge&logo=inertia&logoColor=white)](https://inertiajs.com)
-
   [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v3.x-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com)
-
   [![PHP Version](https://img.shields.io/badge/PHP-v8.2-777BB4?style=for-the-badge&logo=php&logoColor=white)](https://php.net)
 
 
