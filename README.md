@@ -1,20 +1,37 @@
 <div align="center">
 
-  <img src="[https://cdn-icons-png.flaticon.com/512/8654/8654302.png](https://cdn-icons-png.flaticon.com/512/8654/8654302.png)" alt="NexusApp Logo" width="120" height="120" />
+
+
+  <img src="https://cdn-icons-png.flaticon.com/512/8654/8654302.png" alt="NexusApp Logo" width="120" height="120" />
+
+
 
   # 🚀 NexusApp — Sistem Absensi RFID & Akademik Terintegrasi
 
-  **"Sistem Presensi & Manajemen Akademik Enterprise dengan Estetika Visual Premium bertema Catppuccin Macchiato."**
+  
+
+  **"Sistem Manajemen Presensi & Akademik Kampus Kelas Enterprise dengan Antarmuka UI/UX Premium Ala Startup SaaS Modern."**
+
+
 
   ---
 
-  <img src="[https://img.shields.io/badge/Laravel-v11.x-c6a0f6?style=for-the-badge&logo=laravel&logoColor=24273a](https://img.shields.io/badge/Laravel-v11.x-c6a0f6?style=for-the-badge&logo=laravel&logoColor=24273a)" alt="Laravel" />
-  <img src="[https://img.shields.io/badge/Vue.js-v3.x-8bd5ca?style=for-the-badge&logo=vue.js&logoColor=24273a](https://img.shields.io/badge/Vue.js-v3.x-8bd5ca?style=for-the-badge&logo=vue.js&logoColor=24273a)" alt="Vue" />
-  <img src="[https://img.shields.io/badge/Inertia.js-v1.x-f5bde6?style=for-the-badge&logo=inertia&logoColor=24273a](https://img.shields.io/badge/Inertia.js-v1.x-f5bde6?style=for-the-badge&logo=inertia&logoColor=24273a)" alt="Inertia" />
-  <img src="[https://img.shields.io/badge/Tailwind_CSS-v3.x-7dc4e4?style=for-the-badge&logo=tailwind-css&logoColor=24273a](https://img.shields.io/badge/Tailwind_CSS-v3.x-7dc4e4?style=for-the-badge&logo=tailwind-css&logoColor=24273a)" alt="Tailwind" />
-  <img src="[https://img.shields.io/badge/PHP-v8.2-eed49f?style=for-the-badge&logo=php&logoColor=24273a](https://img.shields.io/badge/PHP-v8.2-eed49f?style=for-the-badge&logo=php&logoColor=24273a)" alt="PHP" />
+
+
+  [![Laravel Version](https://img.shields.io/badge/Laravel-v11.x-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)](https://laravel.com)
+
+  [![Vue Version](https://img.shields.io/badge/Vue.js-v3.x-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white)](https://vuejs.org)
+
+  [![InertiaJS](https://img.shields.io/badge/Inertia.js-v1.x-9553E8?style=for-the-badge&logo=inertia&logoColor=white)](https://inertiajs.com)
+
+  [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v3.x-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com)
+
+  [![PHP Version](https://img.shields.io/badge/PHP-v8.2-777BB4?style=for-the-badge&logo=php&logoColor=white)](https://php.net)
+
+
 
 </div>
+
 
 ---
 
