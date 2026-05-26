@@ -6,8 +6,8 @@ import InputLabel from '@/Components/InputLabel.vue';
 import TextInput from '@/Components/TextInput.vue';
 import PrimaryButton from '@/Components/PrimaryButton.vue';
 import InputError from '@/Components/InputError.vue';
+import Swal from 'sweetalert2'; // Tambahkan import SweetAlert di sini
 
-// PERBAIKAN: Namanya disamakan dengan yang dikirim Controller (mahasiswa)
 const props = defineProps({
     mahasiswa: Array 
 });
@@ -45,23 +45,42 @@ const submitMahasiswa = () => {
         form.put(`/admin/mahasiswa/${editingId.value}`, {
             onSuccess: () => {
                 cancelEdit();
-                alert('Data Mahasiswa berhasil diperbarui!');
+                // alert() kaku dihapus, biarkan SweetAlert global dari Layout yang bekerja
             },
         });
     } else {
         form.post('/admin/mahasiswa', {
             onSuccess: () => {
                 form.reset();
-                alert('Mahasiswa berhasil didaftarkan!');
+                // alert() kaku dihapus
             },
         });
     }
 };
 
+// Fungsi hapusMahasiswa sudah menggunakan gaya premium SweetAlert2
 const hapusMahasiswa = (id) => {
-    if (confirm('Yakin ingin menghapus data mahasiswa ini?')) {
-        router.delete(`/admin/mahasiswa/${id}`);
-    }
+    Swal.fire({
+        title: 'Hapus Data Mahasiswa?',
+        text: "Tindakan ini tidak dapat dibatalkan. Semua data absensi terkait mahasiswa ini akan ikut terhapus!",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#ef4444', 
+        cancelButtonColor: '#94a3b8', 
+        confirmButtonText: 'Ya, Hapus Permanen!',
+        cancelButtonText: 'Batal',
+        reverseButtons: true, 
+        customClass: {
+            popup: 'rounded-2xl shadow-xl border border-slate-100',
+            title: 'text-lg font-bold text-slate-800',
+            confirmButton: 'rounded-xl font-semibold shadow-sm',
+            cancelButton: 'rounded-xl font-semibold'
+        }
+    }).then((result) => {
+        if (result.isConfirmed) {
+            router.delete(`/admin/mahasiswa/${id}`);
+        }
+    });
 };
 </script>
 

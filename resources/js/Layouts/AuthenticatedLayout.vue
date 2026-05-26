@@ -1,12 +1,12 @@
 <script setup>
-import { ref, watch, onMounted } from 'vue'; // Tambahkan watch dan onMounted
+import { ref, watch, onMounted } from 'vue';
 import ApplicationLogo from '@/Components/ApplicationLogo.vue';
 import Dropdown from '@/Components/Dropdown.vue';
 import DropdownLink from '@/Components/DropdownLink.vue';
 import NavLink from '@/Components/NavLink.vue';
 import ResponsiveNavLink from '@/Components/ResponsiveNavLink.vue';
 import { Link, usePage } from '@inertiajs/vue3';
-import Swal from 'sweetalert2'; // Import SweetAlert
+import Swal from 'sweetalert2';
 
 const showingNavigationDropdown = ref(false);
 const user = usePage().props.auth.user;
@@ -32,7 +32,6 @@ const showNotification = () => {
     }
 };
 
-// Jalankan saat pertama kali dimuat dan setiap kali ada perubahan flash message
 onMounted(showNotification);
 watch(() => page.props.flash, showNotification, { deep: true });
 </script>
@@ -77,13 +76,13 @@ watch(() => page.props.flash, showNotification, { deep: true });
                                     </NavLink>
                                 </template>
 
-                               <template v-if="user.role === 'dosen'">
-                            <NavLink :href="route('dosen.jadwal')" :active="route().current('dosen.jadwal')">
-                                Jadwal & Laporan
-                            </NavLink>
-                            <NavLink :href="route('dosen.validasi')" :active="route().current('dosen.validasi')">
-                                Validasi Absensi
-                            </NavLink>
+                                <template v-if="user.role === 'dosen'">
+                                    <NavLink :href="route('dosen.jadwal')" :active="route().current('dosen.jadwal')">
+                                        Jadwal & Laporan
+                                    </NavLink>
+                                    <NavLink :href="route('dosen.validasi')" :active="route().current('dosen.validasi')">
+                                        Validasi Absensi
+                                    </NavLink>
                                 </template>
                             </div>
                         </div>
@@ -141,14 +140,15 @@ watch(() => page.props.flash, showNotification, { deep: true });
                         </template>
 
                         <template v-if="user.role === 'dosen'">
-                            <NavLink :href="route('dosen.jadwal')" :active="route().current('dosen.jadwal')">
+                            <ResponsiveNavLink :href="route('dosen.jadwal')" :active="route().current('dosen.jadwal')">
                                 Jadwal & Laporan
-                            </NavLink>
-                            <NavLink :href="route('dosen.validasi')" :active="route().current('dosen.validasi')">
+                            </ResponsiveNavLink>
+                            <ResponsiveNavLink :href="route('dosen.validasi')" :active="route().current('dosen.validasi')">
                                 Validasi Absensi
-                            </NavLink>
+                            </ResponsiveNavLink>
                         </template>
                     </div>
+
                     <div class="border-t border-gray-100 pb-1 pt-4 bg-gray-50">
                         <div class="px-4">
                             <div class="text-base font-medium text-gray-800">{{ user.name }} <span class="text-xs text-indigo-600 uppercase ml-1">({{ user.role }})</span></div>

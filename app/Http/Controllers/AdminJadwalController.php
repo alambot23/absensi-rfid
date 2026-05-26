@@ -37,6 +37,7 @@ class AdminJadwalController extends Controller
             'toleransi_menit' => 'required|integer|min:0',
             'dosen_id'        => 'required|exists:users,id',
             'semester'        => 'required|string|max:50',
+            'sks' => 'required|integer|min:1|max:6',
         ]);
 
         // Gabungkan detik secara manual agar sesuai dengan tipe data TIME di MySQL
@@ -68,6 +69,7 @@ class AdminJadwalController extends Controller
             'toleransi_menit' => 'required|integer|min:0',
             'dosen_id'        => 'required|exists:users,id',
             'semester'        => 'required|string|max:50',
+            'sks' => 'required|integer|min:1|max:6',
         ]);
 
         // FIX: Tambahkan format detik manual sebelum eksekusi update ke database

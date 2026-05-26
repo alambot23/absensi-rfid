@@ -18,6 +18,7 @@ class JadwalKuliah extends Model
         'ruangan',
         'ruangan_slug',
         'hari',
+        'sks',
         'jam_mulai',
         'jam_selesai',
         'toleransi_menit',

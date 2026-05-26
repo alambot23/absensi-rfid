@@ -80,6 +80,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
         Route::get('/validasi', [DosenController::class, 'validasi'])->name('dosen.validasi');
         Route::put('/validasi/{id}', [DosenController::class, 'updateValidasi']);
         Route::get('/jadwal/export/{id}', [DosenController::class, 'exportLaporan'])->name('dosen.export');
+        
     });
 
 }); 
